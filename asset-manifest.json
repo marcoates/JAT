@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/JAT-Job-Application-Tracker/static/css/main.e657f16f.css",
-    "main.js": "/JAT-Job-Application-Tracker/static/js/main.157d2506.js",
+    "main.js": "/JAT-Job-Application-Tracker/static/js/main.94483fc8.js",
     "static/media/JAT_graphic-01.png": "/JAT-Job-Application-Tracker/static/media/JAT_graphic-01.9aacb3177f8ffe70327b.png",
     "static/media/Picture.jpeg": "/JAT-Job-Application-Tracker/static/media/Picture.e647621dccb9367eff67.jpeg",
     "static/media/Stondato.png": "/JAT-Job-Application-Tracker/static/media/Stondato.21513c94ea33f4a4d33f.png",
     "static/media/JAT_logo.svg": "/JAT-Job-Application-Tracker/static/media/JAT_logo.26d64ffcb37de439bf2c601e4ed88f90.svg",
     "index.html": "/JAT-Job-Application-Tracker/index.html",
     "main.e657f16f.css.map": "/JAT-Job-Application-Tracker/static/css/main.e657f16f.css.map",
-    "main.157d2506.js.map": "/JAT-Job-Application-Tracker/static/js/main.157d2506.js.map"
+    "main.94483fc8.js.map": "/JAT-Job-Application-Tracker/static/js/main.94483fc8.js.map"
   },
   "entrypoints": [
     "static/css/main.e657f16f.css",
-    "static/js/main.157d2506.js"
+    "static/js/main.94483fc8.js"
   ]
 }
