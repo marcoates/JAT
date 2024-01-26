@@ -1,0 +1,176 @@
+.IntroWrapper {
+    display: flex;
+    padding: 25px 100px;
+    gap: 100px;
+}
+
+.IntroImageContainer {
+    display: flex;
+    width: 50%;
+}
+
+.IntroImage {
+    width: 100%;
+    object-fit: cover;
+}
+
+.IntroMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    width: 50%;
+}
+
+.IntroMessageList{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.IntroMessageListItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.IntroMessageListItemTitle{
+    border-top: 10px solid var(--black);
+    border-bottom: 10px solid var(--black);
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--green);
+    margin: 0px;
+    margin-right: auto;
+}
+
+.IntroMessageListItemText {
+    padding: 0px;
+    font-weight: 300;
+    line-height: 1.5;
+    background-color: none;
+    border: none;
+    border-radius: none;
+    color: var(--black);
+}
+
+.IntroFeatureWrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.IntroFeatureIcon {
+    color: var(--green);
+    padding: 7px;
+    border-radius: 50%;
+    background-color: var(--black);
+    box-shadow: 0px 5px 10px var(--lightBlack);
+}
+
+.IntroFeatureText {
+    padding: 10px;
+    background-color: var(--lightGreen);
+    border: 3px solid var(--green);
+    border-radius: 10px;
+}
+
+.IntroCallToActionBigger {
+    scale: 1.2;
+    border: 3px solid var(--green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: var(--black);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .IntroImageContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .IntroWrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 25px 100px 25px;
+        gap: 25px;
+    }
+
+    .IntroMessage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .IntroMessageList{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .IntroMessageListItem {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .IntroMessageListItemTitle{
+        border-top: 10px solid var(--black);
+        border-bottom: 10px solid var(--black);
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: var(--green);
+        margin: auto;
+        margin-right: auto;
+    }
+
+    .IntroMessageListItemTitleWrapper {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .IntroMessageListItemTitleWrapperContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .IntroFeatureText {
+        padding: 10px 15px;
+        background-color: var(--lightGreen);
+        border: 3px solid var(--green);
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    .IntroMessageListItemText {
+        padding: 10px;
+        font-weight: 300;
+        line-height: 1.5;
+        background-color: var(--lightGray);
+        border: 3px solid var(--gray);
+        border-radius: 10px;
+        color: var(--black);
+        text-align: inter-word;
+    }
+
+}

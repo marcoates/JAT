@@ -1,0 +1,37 @@
+:root {
+  --white: #F7EDF0;
+  --lightBlack: #19192335;
+  --black: #191923;
+  --lightGreen: #96e6b32f;
+  --green: #96E6B3;
+  --lightGray: #89949418;
+  --gray: #899494;
+  --lightRed: #d144574c;
+  --red: #D52941;
+  --lightGold: #e09f3e14;
+  --gold: #E09F3E;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+button {
+  font-family: 'Rubik', sans-serif;
+}
+

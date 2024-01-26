@@ -1,0 +1,53 @@
+.DashboardSuggestionWrapperWhenEmpty {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.DashboardSuggestionCallToAction {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    border-radius: 10px;
+    border: 3px solid var(--green);
+    background-color: var(--lightGreen);
+}
+
+.DashboardSuggestionCallToAction h3{
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.DashboardSuggestionCallToActionFavorite {
+    line-height: 1.5;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 3px solid var(--gold);
+    background-color: var(--lightGold);
+}
+
+.DashboardSuggestionCallToActionFavorite h3{
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .DashboardSuggestionWrapperWhenEmpty {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        text-align: center;
+    }
+
+}

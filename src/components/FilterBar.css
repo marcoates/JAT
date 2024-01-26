@@ -1,0 +1,122 @@
+
+.DashboardFiltersBar {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.DashboardFiltersBarList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.DashboardFiltersBarItem {
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.DashboardFiltersBarItemContainer {
+    padding: 8px 13px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-color: var(--lightGray);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.DashboardFiltersBarItemContainerFocus {
+    padding: 8px 13px;
+    border-radius: 10px;
+    color: var(--black);
+    border: 3px solid var(--green);
+    background-color: var(--lightGreen);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.DashboardFiltersBarItemContainer label{
+    cursor: pointer;
+}
+
+.DashboardFiltersBarItemContainer:hover {
+    color: var(--black);
+    border: 3px solid var(--green);
+    background-color: var(--lightGreen);
+}
+
+.DashboardFiltersBarItemCheckbox {
+    cursor: pointer;
+    accent-color: var(--green);
+    height: 14px; /* not needed */
+    width: 14px; /* not needed */
+}
+
+.DashboardFiltersBarTagsDelete {
+    position: relative;
+    cursor: pointer;
+    border: 3px solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--gray);
+    background-color: #89949418;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.DashboardFiltersBarTagsDelete:hover {
+    color: var(--red);
+    background-color: #d144574c;
+    border: 3px solid var(--red);
+}
+
+@media only screen and (max-width: 1000px) {
+
+.DashboardFiltersBarItemContainer {
+    padding: 5px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-color: var(--lightGray);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.DashboardFiltersBarItemContainerFocus {
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--black);
+    border: 3px solid var(--green);
+    background-color: var(--lightGreen);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.DashboardFiltersBarItemContainer label{
+    cursor: pointer;
+}
+
+}

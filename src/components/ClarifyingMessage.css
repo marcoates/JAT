@@ -1,0 +1,25 @@
+.ClaryfingMessage {
+    width: 235px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 110%;
+    z-index: 10;
+}
+
+.ClaryfingMessage span{
+    font-weight: 300;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    padding: 10px;
+    color: var(--white);
+    background-color: var(--gray);
+}
+
+.ClaryfingMessageArrow {
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid var(--gray);
+}

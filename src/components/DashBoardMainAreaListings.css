@@ -1,0 +1,273 @@
+.DashboardMainAreaList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.DashboardMainAreaItemWrapper {
+    display: flex;
+    width: 100%;
+    gap: 15px;
+}
+
+.DashboardMainAreaItemCheckboxContainer {
+    padding: 8px 13px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-color: var(--lightGray);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.DashboardMainAreaItemCheckboxContainer:hover {
+    color: var(--black);
+    border: 3px solid var(--green);
+    background-color: var(--lightGreen);
+}
+
+.DashboardMainAreaItemCheckboxFocus {
+    padding: 8px 13px;
+    color: var(--black);
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-color: var(--lightGreen);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.DashboardMainAreaItemCheckboxFocus:hover {
+    color: var(--black);
+    border: 3px solid var(--green);
+    background-color: var(--lightGreen);
+}
+
+.DashboardMainAreaItem {
+    font-size: 0.85rem;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    border: 3px solid white;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: border 0.3s, background-color 0.3s;
+    cursor: pointer;
+}
+
+.DashboardMainAreaItem:hover {
+    border: 3px solid var(--green);
+    background-color: white;
+}
+
+.DashboardMainAreaItemFavorite {
+    font-size: 0.85rem;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    border: 3px solid var(--gold);
+    padding: 15px;
+    border-radius: 10px;
+    transition: border 0.3s;
+    cursor: pointer;
+    background-image: linear-gradient(var(--lightGold), var(--lightGold));
+    background-color: white;
+}
+
+.DashboardMainAreaItemFavorite:hover {
+    border: 3px solid var(--green);
+}
+
+.DashboardMainAreaItemLink {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.DashboardMainAreaItemDescriptionContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+.DashboardMainAreaItemDescriptionEmployerName {
+    font-weight: 800;
+}
+
+.DashboardMainAreaItemTagsContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.DashboardMainAreaItemTagsSalary {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--black);
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: var(--lightGreen);
+}
+
+.DashboardMainAreaItemTagsTags {
+    color: var(--gray);
+    border: 2px solid var(--gray);
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #89949418;
+}
+
+.DashboardMainAreaItemTagsFavorite {
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+}
+
+
+.DashboardSuggestion {
+    padding: 10px 15px;
+    background-color: var(--gray);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.DashboardMainAreaItemDescriptionWrapper {
+    padding: 0px 15px 0px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.DescriptionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.TagsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .DashboardMainAreaItemDescriptionWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .DescriptionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+    
+    }
+
+    .DashboardMainAreaItemDescriptionContainer {
+        flex-direction: column;
+        gap: 10px 15px;
+        align-items: flex-start;
+        width: 65%;
+    }
+
+    .DashboardMainAreaItemDescriptionContainerStretch {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 15px;
+        align-items: flex-start;
+        width: 65%;
+    }
+
+    .TagsContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .DashboardMainAreaItemLink {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .DashboardMainAreaItem {
+        position: relative;
+        font-size: 0.85rem;
+        justify-content: space-between;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        border: 3px solid white;
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        transition: border 0.3s, background-color 0.3s;
+        cursor: pointer;
+        gap: 15px;
+    }
+
+    .DashboardMainAreaItemWrapper {
+        display: flex;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .DashboardMainAreaItemFavorite {
+        font-size: 0.85rem;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+        align-items: flex-start;
+        display: flex;
+        border: 3px solid var(--gold);
+        padding: 15px;
+        border-radius: 10px;
+        transition: border 0.3s;
+        cursor: pointer;
+        background-image: linear-gradient(var(--lightGold), var(--lightGold));
+        background-color: white;
+        gap: 15px;
+    }
+
+    .TagsContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.65rem;
+    }
+
+    .DashboardMainAreaItemTagsContainer {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        right: 15px;
+    }
+
+}

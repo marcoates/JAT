@@ -1,0 +1,38 @@
+.DashboardWrapper {
+    display: flex;
+    width: 100%;
+    padding: 50px 100px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.DashboardContainer {
+    border-radius: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    /* padding: 25px;
+    background-color: #89949448;
+    background-image: url(../assets/JAT_pattern.png);
+    background-size: cover; */
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .DashboardWrapper {
+        display: flex;
+        width: 100%;
+        padding: 25px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .DashboardContainer {
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+
+}

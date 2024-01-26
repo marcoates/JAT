@@ -1,0 +1,277 @@
+.AboutWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 250px;
+}
+
+.AboutWrapperList{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+.AboutWrapperListItem {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AboutWrapperListItem h1{
+    border-top: 10px solid var(--black);
+    border-bottom: 10px solid var(--black);
+    color: var(--black);
+    padding: 10px 15px;
+    background-color: var(--green);
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.AboutWrapperListItem h3{
+    margin-right: auto;
+}
+
+.AboutWrapperListItem p{
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.enhanchedText {
+    font-weight: 500;
+    background-color: var(--green);
+}
+
+.AboutPic {
+    width: 250px;
+    border-radius: 50%;
+    border: 10px solid var(--black);
+}
+
+.AboutCallToActionListItemWrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.AboutCallToActionListItemWrapper:hover {
+    color: var(--white);
+}
+
+
+.AboutCallToActionList {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style-type: none;
+    gap: 15px;
+    background-color: transparent;
+    padding: 0px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: var(--black);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.088);
+    border: 5px solid var(--green);
+    transition: 0.3s;
+}
+
+.AboutCallToActionList:hover {
+    border: 5px solid #ff0000;
+    background-color: #ff0000;
+    color: white;
+}
+
+.AboutMBLogo {
+    width: 20px;
+}
+
+.AboutCallToActionListItemLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.AboutCallToActionListItem {
+    font-size: 1rem;
+}
+
+.decoration:nth-of-type(4) {
+    top: -25px;
+    left: -25px;
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: var(--lightGold);
+    border: 5px solid var(--gold);
+}
+
+.decoration:nth-of-type(1) {
+    top: auto;
+    bottom: 125px;
+    left: auto;
+    right: -25px;
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: var(--lightGreen);
+    border: 5px solid var(--green);
+}
+
+.decoration:nth-of-type(2) {
+    top: auto;
+    bottom: 175px;
+    left: -25px;
+    right: auto;
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: var(--lightGray);
+    border: 5px solid var(--gray);
+}
+
+.decoration:nth-of-type(3) {
+    top: 50px;
+    bottom: auto;
+    left: auto;
+    right: -10px;
+    position: absolute;
+    width: 75px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: var(--lightRed);
+    border: 5px solid var(--red);
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .AboutWrapperListItem {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .AboutWrapperListItem h3{
+        margin-right: 0;
+    }
+
+    .AboutWrapperListItem:last-of-type {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AboutWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        align-items: center;
+    }
+
+    .AboutWrapperList{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .decoration:nth-of-type(4) {
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        width: 75px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: var(--lightGold);
+        border: 5px solid var(--gold);
+    }
+    
+    .decoration:nth-of-type(1) {
+        top: auto;
+        bottom: 25px;
+        left: auto;
+        right: -15px;
+        position: absolute;
+        width: 75px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: var(--lightGreen);
+        border: 5px solid var(--green);
+    }
+    
+    .decoration:nth-of-type(2) {
+        top: auto;
+        bottom: 75px;
+        left: -25px;
+        right: auto;
+        position: absolute;
+        width: 75px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: var(--lightGray);
+        border: 5px solid var(--gray);
+    }
+    
+    .decoration:nth-of-type(3) {
+        top: 50px;
+        bottom: auto;
+        left: auto;
+        right: -10px;
+        position: absolute;
+        width: 75px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: var(--lightRed);
+        border: 5px solid var(--red);
+    }
+
+    .AboutWrapperListItem h1{
+        border-top: 10px solid var(--black);
+        border-bottom: 10px solid var(--black);
+        color: var(--black);
+        padding: 10px 15px;
+        background-color: var(--green);
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .AboutCallToActionList {
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        list-style-type: none;
+        gap: 15px;
+        background-color: transparent;
+        padding: 0px 15px;
+        border-radius: 15px;
+        cursor: pointer;
+        color: var(--black);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.088);
+        border: 5px solid var(--green);
+        transition: 0.3s;
+    }
+
+    .AboutWrapperListItem p{
+        font-weight: 300;
+        padding: 10px;
+        border-radius: 10px;
+        border: 3px solid var(--gray);
+        background-color: var(--lightGray);
+        margin: 0;
+    }
+
+}

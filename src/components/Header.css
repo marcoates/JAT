@@ -1,0 +1,207 @@
+.HeaderContainer {
+    display: flex;
+    padding: 0px 25px;
+}
+
+.HeaderList {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.HeaderItem{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 500;
+}
+
+.HeaderLogo{
+    width: 100px;
+}
+
+.HeaderLoginButton {
+    font-weight: 500;
+    color: var(--black);
+    border: 2px solid var(--black);
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.HeaderLoginButton:hover {
+    background-color: var(--black);
+    color: var(--white);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.088);
+}
+
+.HeaderSignUpButton {
+    font-weight: 500;
+    color: var(--black);
+    border: 2px solid var(--green);
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.HeaderSignUpButton:hover {
+    border: 2px solid var(--black);
+    background-color: var(--green);
+    color: var(--black);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.088);
+}
+
+.HeaderMenuItem {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 1px;
+    color: var(--black);
+}
+
+.HeaderMenuItem::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--green);
+    transition: 0.3s ease-in-out;
+}
+
+.HeaderMenuItem:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.HeaderMenuItem:focus::before {
+    width: 100%;
+}
+
+.HeaderMenuDEMOButton {
+    padding: 5px;
+    border: 2px solid var(--gray);
+    color: var(--black);
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s;
+
+}
+
+.HeaderMenuDEMOButton:hover {
+    color: var(--white);
+    background-color: var(--gray);
+}
+
+.HeaderLogoutButton {
+    font-weight: 500;
+    color: var(--black);
+    border: 2px solid var(--red);
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.HeaderLogoutButton:hover {
+    border: 2px solid var(--black);
+    background-color: var(--red);
+    color: var(--white);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.088);
+}
+
+.HeaderProfileArea {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.HeaderProfileName {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.HeaderProfileName:hover {
+    border: 2px solid var(--black);
+    background-color: var(--green);
+}
+
+.HeaderProfilePic {
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--black);
+}
+
+.IntroCallToAction {
+    border: 3px solid var(--green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: var(--black);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.IntroCallToActionHidden {
+    border: 3px solid var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 5px 10px;
+    color: var(--gray);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--lightGray);
+}
+
+.IntroCallToAction:hover {
+    border: 3px solid var(--black);
+    background-color: var(--green);
+    color: var(--black);
+    box-shadow: 0px 3px 5px var(--lightBlack);
+    scale: 1.1;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .HeaderLogo{
+        width: 75px;
+    }
+
+    .HeaderItem{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 500;
+    }
+
+    .HeaderList {
+        justify-content: space-between;
+        padding-inline-start: 0px;
+    }
+
+}

@@ -1,0 +1,146 @@
+
+.DashboardSearchBarWrapper {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: var(--black);
+    border-radius: 15px;
+}
+
+.DashboardSearchBar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--black);
+    width: 100%;
+    gap: 10px;
+}
+
+.DashboardSearchBarBar{
+    display: flex;
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px;
+    width: 93%;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .DashboardSearchBar input::placeholder{
+    color: #899494ac;
+  }
+
+  .DashboardSearchBarBar:hover {
+    box-shadow: 0px 0px 5px var(--green);
+  }
+
+  .DashboardSearchBarIcon {
+    color: var(--green);
+  }
+
+  .DashboardSearchBarButton {
+    font-size: 1rem;
+    padding:5px 10px;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+    color: var(--white);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .DashboardSearchBarButton:hover {
+    border: 2px solid var(--green);
+    background-color: var(--lightGreen);
+  }
+
+
+.DashboardMainAreaFilteredListingsWrapper {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  background-color: var(--gray);
+  margin: auto;
+  left: 0;
+  top: 100%;
+  padding: 25px;
+  border-radius: 0px 0px 15px 15px;
+  z-index: 2;
+}
+
+.DashboardMainAreaFilteredListingsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  gap: 25px;
+}
+
+.DashboardMainAreaFilteredListingsItem {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  color: var(--black);
+  border: 5px solid white;
+}
+
+
+.DashboardMainAreaFilteredItemTagsDelete {
+  cursor: pointer;
+  border: 3px solid transparent;
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--gray);
+  background-color: #89949418;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.DashboardMainAreaFilteredItemTagsDelete:hover {
+  color: var(--red);
+  background-color: #d144574c;
+  border: 3px solid var(--red);
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .DashboardSearchBarWrapper {
+    position: relative;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background-color: var(--black);
+    border-radius: 0px;
+}
+
+.DashboardMainAreaItemTagsWrapper {
+  display: flex;
+  gap: 10px;
+  font-size: 0.65rem;
+}
+
+.DashboardMainAreaItemLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+}
