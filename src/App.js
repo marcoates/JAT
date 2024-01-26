@@ -8,7 +8,7 @@ import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={ "/JAT-Job-Application-Tracker"}>
     <Header />
     <Routes>
      <Route path="/" element={<Home />} />
