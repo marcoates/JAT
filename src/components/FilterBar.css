@@ -115,8 +115,17 @@
     font-size: 0.85rem;
 }
 
+.DashboardFiltersBarItem {
+    gap: 10px;
+    justify-content: flex-start;
+}
+
 .DashboardFiltersBarItemContainer label{
     cursor: pointer;
+}
+
+.DashboardFiltersBarList {
+    gap: 15px;
 }
 
 }

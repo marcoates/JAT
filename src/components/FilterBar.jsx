@@ -26,6 +26,7 @@ import {
 import "./FilterBar.css";
 // import EditWidget from "./EditWidget";
 import ClarifyingMessage from "./ClarifyingMessage";
+import { useMediaQuery } from "@mui/material";
 
 function FilterBar() {
   const list = useJobApplicationsListContext();
@@ -155,6 +156,8 @@ function FilterBar() {
       setSelection([]);
     }
   }
+
+  const isSmallScreen = useMediaQuery("(max-width:1000px)");
 
   return (
     <AnimatePresence>

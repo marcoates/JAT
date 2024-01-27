@@ -166,6 +166,17 @@ function DashboardSearchBar() {
                         }
                         key={filteredIndex}
                       >
+
+    <motion.div
+      key={filteredItem.id + "-DashboardMainAreaItemDescriptionWrapper"} // Adjust key to ensure uniqueness
+      layout
+      className="DashboardMainAreaItemDescriptionWrapper"
+    >
+      <motion.div
+        key={filteredItem.id + "-DescriptionContainer"} // Adjust key to ensure uniqueness
+        layout
+        className="DescriptionContainer"
+      >
                         <div
                           id="notReset"
                           className="DashboardMainAreaItemDescriptionContainer"
@@ -194,36 +205,33 @@ function DashboardSearchBar() {
                               {filteredItem.salary}
                             </span>
                           )}
-                        { isSmallScreen &&
-                        <div className="DashboardMainAreaItemTagsWrapper">
-                          {filteredItem.tags !== "" &&
-                            filteredItem.tags[0] !== "" &&
-                            filteredItem.tags.map((tag, tagIndex) => (
-                              <span
-                                className="DashboardMainAreaItemTagsTags"
-                                key={tagIndex}
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                            </div>
-                          }
-
                         </div>
+                        
+                        {Array.isArray(filteredItem.tags) && filteredItem.tags !== undefined && (
+          <motion.div
+            key={filteredItem.id + "-TagsContainer"}
+            layout
+            className="TagsContainer"
+          >
+
+            <AnimatePresence>
+              {filteredItem.tags.map((tag, index) => (
+                <motion.span
+                  key={index + "-mainDivDescriptionTags"}
+                  layout
+                  className="DashboardMainAreaItemTagsTags"
+                >
+                  {tag}
+                </motion.span>
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        )}
+                          
                         <div
                           className="DashboardMainAreaItemTagsContainer"
                           id="notReset"
                         >
-                          {/* {filteredItem.tags !== "" &&
-                            filteredItem.tags[0] !== "" &&
-                            filteredItem.tags.map((tag, tagIndex) => (
-                              <span
-                                className="DashboardMainAreaItemTagsTags"
-                                key={tagIndex}
-                              >
-                                {tag}
-                              </span>
-                            ))} */}
                           {filteredItem.favorite && (
                             <span
                               className="DashboardMainAreaItemTagsFavorite"
@@ -287,6 +295,8 @@ function DashboardSearchBar() {
                             <DeleteIcon fontSize="medium" />
                           </span>
                         </div>
+                        </motion.div>
+                        </motion.div>
                       </div>
                     </Link>
                   </motion.li>
